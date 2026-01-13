@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | WDD 231 - Web Frontend Development I - Jacqueline Mufetu</title>
+  <meta name="description" content="WDD 231 course home page showcasing projects, coursework, and web development skills.">
+  <meta name="author" content="Jacqueline Mufetu">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" >
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/logo.webp" alt="Site Logo" class="logo" width="400" height="160" fetchpriority="high">
+        <span class="site-name">Web Frontend Development I</span>
+      </div>
+      <button id="menuButton" aria-label="Open navigation menu" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>
+
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about-student-container">
+
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Jacqueline Mufetu, a passionate web development student dedicated to creating 
+          responsive, accessible, and modern websites. I thrive on transforming ideas into 
+          engaging digital experiences that are both user-friendly and visually appealing. 
+          With a keen eye for design and a commitment to best practices, I am continuously 
+          honing my skills to deliver high-quality, innovative web solutions.
+        </p>
+      </div>
+      <div class="student-photo-section">
+        <h2>Student Photo</h2>
+        <img
+          src="images/profile_picture.webp"
+          alt="Student profile photo"
+          loading="lazy"
+        >
+      </div>
+    </section>
+
+    <section>
+      <h3>Web Certificate Courses</h3>
+      <div id="courseCards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/jaykee28" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub icon">
+      </a>
+      <a href="https://www.linkedin.com/in/jacqueline-mufetu" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon">
+      </a>
+      <a href="https://www.facebook.com/jaclynmphetu" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook icon">
+      </a>
+      <a href="https://www.instagram.com/jaclynmphetu/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram icon">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; <span id="currentYear"></span> | Jacqueline Mufetu | 🌈 South Africa 🌈</p>
+    </div>
+
+    <div class="last-modified">
+      <p><time id="lastModified"></time></p>
+    </div>
+  </footer>
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</body>
+</html>
