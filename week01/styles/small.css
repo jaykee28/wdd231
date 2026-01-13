@@ -1,6 +1,4 @@
-/* ==============================
-   Box-sizing & Global Styles
-============================== */
+
 *,
 *::before,
 *::after {
@@ -23,9 +21,6 @@ img {
   border-radius: 6px;
 }
 
-/* ==============================
-   Header & Navigation
-============================== */
 header {
   background-color: #1f3c88;
   color: #ffffff;
@@ -110,9 +105,7 @@ header {
   font-weight: 700;
 }
 
-/* ==============================
-   Main Content
-============================== */
+
 main {
   padding: 1rem;
 }
@@ -180,9 +173,6 @@ section h2 {
   object-fit: cover;
 }
 
-/* ==============================
-   Filters & Courses
-============================== */
 .filters {
   display: flex;
   gap: 1rem;
@@ -271,9 +261,7 @@ section h2 {
   color: #00796b;
 }
 
-/* ==============================
-   Footer
-============================== */
+
 footer {
   background-color: #1f3c88;
   color: #ffffff;
@@ -312,82 +300,4 @@ footer {
   margin-top: 0.5rem;
   font-style: italic;
   font-size: 0.85rem;
-}
-
-/* ==============================
-   Responsive - Large Screens
-============================== */
-@media (min-width: 64rem) {
-  #primaryNav {
-    display: block !important;
-    background-color: transparent;
-  }
-
-  #primaryNav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-  }
-
-  #primaryNav li {
-    border: none;
-  }
-
-  #primaryNav a {
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
-    color: white;
-  }
-
-  #primaryNav a:hover {
-    background-color: transparent;
-    border-bottom: 2px solid #ffd166;
-  }
-
-  #menuButton {
-    display: none;
-  }
-
-  .header-content {
-    padding: 1.5rem 2rem;
-  }
-
-  .logo-container {
-    gap: 1rem;
-  }
-
-  .logo {
-    height: 200px;
-  }
-
-  .site-name {
-    font-size: 2rem;
-    color: #ffffff;
-  }
-
-  #courseCards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .course-card {
-    padding: 1.5rem;
-  }
-
-  .course-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .course-card p {
-    font-size: 1rem;
-  }
-
-  footer {
-    font-size: 1rem;
-    padding: 2rem 2rem;
-  }
-
-  .social-links {
-    gap: 2rem;
-  }
 }
