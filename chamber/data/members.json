@@ -34,7 +34,7 @@
     "address": "32 Henshawe Road, Southfield 7800",
     "phone": "021 705 8752",
     "website": "https://sunrisecafe.net",
-    "image": "member4.webp",
+    "image": "sunrisecafe.webp",
     "membership": 1,
     "industry": "Hospitality",
     "description": "Convenience store and cafe serving local favorites."
@@ -44,7 +44,7 @@
     "address": "Unit 9, Montague Industrial Park, 7 Bp Rd, Montague Gardens, Cape Town, 7441, South Africa",
     "phone": "087 195 0225",
     "website": "https://www.greenleafhome.co.za",
-    "image": "member5.webp",
+    "image": "greenleaf.webp",
     "membership": 2,
     "industry": "Retail",
     "description": "Organic and sustainable grocery and home products."
@@ -54,7 +54,7 @@
     "address": "West Quay Road, Victoria & Alfred, Cape Town 8001",
     "phone": "021 410 7100",
     "website": "https://www.capegrace.com",
-    "image": "member6.webp",
+    "image": "capegrace.webp",
     "membership": 3,
     "industry": "Hospitality",
     "description": "Luxury waterfront hotel with world-class amenities."
@@ -64,7 +64,7 @@
     "address": "49 Gladiolus St, Lentegeur, Mitchells Plain, 7785",
     "phone": "021 333 4444",
     "website": "https://www.craftyhands.us/",
-    "image": "member7.webp",
+    "image": "crafthands.webp",
     "membership": 1,
     "industry": "Retail",
     "description": "Handmade crafts and artisan goods."
