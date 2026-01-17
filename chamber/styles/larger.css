@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+
+  body {
+    padding: 0 2rem;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    border-radius: 0;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  #members.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #members.list-view .member-card {
+    gap: 2rem;
+  }
+}

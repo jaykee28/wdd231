@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chamber Directory | WDD 231</title>
+  <meta name="description" content="Official chamber of commerce member directory.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses and chamber members.">
+  <meta property="og:image" content="https://jaykee28.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://jaykee28.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Chamber of Commerce Logo" width="150" height="75">
+      <h1>Chamber of Commerce</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <h2>Member Directory</h2>
+
+    <!-- View Toggle Buttons -->
+    <div class="view-controls">
+      <button id="gridBtn" aria-label="Show members in grid view">Grid View</button>
+      <button id="listBtn" aria-label="Show members in list view">List View</button>
+    </div>
+
+    <!-- Members Container -->
+    <section id="members" class="grid-view">
+      <!-- Member cards are dynamically loaded from members.json -->
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <!-- Chamber Name & Address -->
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>123 Main Street, Cape Town, South Africa</p>
+
+      <!-- Contact Info -->
+      <p>Email: info@chamber.org | Phone: +27 61 155 2911</p>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn Logo" width="24" height="24">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+        </a>
+      </div>
+
+      <!-- Developer Info -->
+      <p>Jacqueline Mufetu | WDD 231</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/directory.js"></script>
+</body>
+</html>

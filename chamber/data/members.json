@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Rykaart's Restaurant",
+    "address": "Longridge Wine Estate, Off the R44, Helderbergpad, Stellenbosch",
+    "phone": "+27 21 855 2005",
+    "website": "https://longridge.co.za/our-food-and-restaurant/",
+    "image": "rykaarts.webp",
+    "membership": 3,
+    "industry": "Hospitality",
+    "description": "Fine dining and wine pairings in a beautiful vineyard setting."
+  },
+  {
+    "name": "BlueWave Tech",
+    "address": "88 Tech Park Road, Stellenbosch",
+    "phone": "+27 21 456 7890",
+    "website": "https://bluewave.net",
+    "image": "bluewave.webp",
+    "membership": 2,
+    "industry": "Technology",
+    "description": "Innovative software solutions for businesses of all sizes."
+  },
+  {
+    "name": "NextGen Solutions",
+    "address": "12 Innovation Drive, Stellenbosch",
+    "phone": "+27 21 444 5555",
+    "website": "https://nextgenholding.co.za",
+    "image": "nextgen.webp",
+    "membership": 1,
+    "industry": "Technology",
+    "description": "Next generation consulting and IT solutions."
+  },
+  {
+    "name": "Sunrise Cafe",
+    "address": "32 Henshawe Road, Southfield 7800",
+    "phone": "021 705 8752",
+    "website": "https://sunrisecafe.net",
+    "image": "member4.webp",
+    "membership": 1,
+    "industry": "Hospitality",
+    "description": "Convenience store and cafe serving local favorites."
+  },
+  {
+    "name": "GreenLeaf Market",
+    "address": "Unit 9, Montague Industrial Park, 7 Bp Rd, Montague Gardens, Cape Town, 7441, South Africa",
+    "phone": "087 195 0225",
+    "website": "https://www.greenleafhome.co.za",
+    "image": "member5.webp",
+    "membership": 2,
+    "industry": "Retail",
+    "description": "Organic and sustainable grocery and home products."
+  },
+  {
+    "name": "Cape Grace Hotel",
+    "address": "West Quay Road, Victoria & Alfred, Cape Town 8001",
+    "phone": "021 410 7100",
+    "website": "https://www.capegrace.com",
+    "image": "member6.webp",
+    "membership": 3,
+    "industry": "Hospitality",
+    "description": "Luxury waterfront hotel with world-class amenities."
+  },
+  {
+    "name": "Crafty Hands",
+    "address": "49 Gladiolus St, Lentegeur, Mitchells Plain, 7785",
+    "phone": "021 333 4444",
+    "website": "https://www.craftyhands.us/",
+    "image": "member7.webp",
+    "membership": 1,
+    "industry": "Retail",
+    "description": "Handmade crafts and artisan goods."
+  }
+]
