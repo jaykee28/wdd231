@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Town Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Cape Town Chamber of Commerce. Supporting local businesses, economic growth, and community engagement in Cape Town.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS for dynamic weather and spotlights -->
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+      <h1>Chamber of Commerce</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="images/capetown.webp" alt="Cape Town Chamber of Commerce Hero Image">
+      <div>
+        <h2>Welcome to the Cape Town Chamber of Commerce</h2>
+        <p>Connecting businesses. Building community. Driving economic growth.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!--HOME INFO GRID-->
+  <section class="home-cards">
+     <!-- EVENTS SECTION -->
+    <section class="events">
+      <h3>Upcoming Events</h3>
+      <p>Stay tuned for our latest workshops, networking sessions, and community events.</p>
+    </section>
+
+    <!-- WEATHER SECTION -->
+     
+ <section class="weather">
+  <!-- Current Weather -->
+  <div class="weather-card">
+    <div class="current-weather">
+      <div class="weather-details" id="weather-details"></div>
+    </div>
+  </div>
+
+  
+  <!-- Forecast -->
+  <div class="weather-card">
+    <div class="forecast" id="forecast"></div>
+  </div>
+</section>
+
+
+
+
+    <!-- SPOTLIGHTS SECTION -->
+    <section class="spotlights">
+
+      <!-- Dynamic spotlight cards will be added here by index.js -->
+    </section>
+  </main>
+
+ <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <!-- Chamber Name & Address -->
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>123 Main Street, Cape Town, South Africa</p>
+
+      <!-- Contact Info -->
+      <p>Email: info@chamber.org | Phone: +27 61 155 2911</p>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn Logo" width="24" height="24">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+        </a>
+      </div>
+
+      <!-- Developer Info -->
+       <p>© <span id="currentYear"></span> Jacqueline Mufetu | WDD 231</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </div>
+</footer>
+
+</body>
+</html>

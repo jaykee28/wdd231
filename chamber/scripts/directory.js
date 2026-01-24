@@ -1,11 +1,18 @@
 // ===========================
-// Last Modified & Copyright
+// Last Modified
+// ===========================
+const lastModifiedSpan = document.getElementById('lastModified');
+if (lastModifiedSpan) {
+  lastModifiedSpan.textContent = document.lastModified;
+}
+
+// ===========================
+// Footer Dates
 // ===========================
 document.getElementById('lastModified').textContent = document.lastModified;
-const copyright =
-  document.createElement('p');
-copyright.textContent = `© ${new Date().getFullYear()} Jacqueline Mufetu | WDD 231`;
-document.querySelector('footer .footer-content').appendChild(copyright);
+document.getElementById('currentYear').textContent =
+  new Date().getFullYear();
+
 
 // ===========================
 // Grid/List Toggle
@@ -29,43 +36,58 @@ listBtn.addEventListener('click', () => {
 // ===========================
 async function loadMembers() {
   try {
-    const response = await fetch('../data/members.json'); // adjust path if needed
+    const response = await fetch('data/members.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+
     const members = await response.json();
-    
     membersContainer.innerHTML = '';
 
     members.forEach(member => {
-      const card = document.createElement('div');
+      const card = document.createElement('article');
       card.classList.add('member-card');
 
       card.innerHTML = `
-        <img src="../images/${member.image}" alt="${member.name} Logo" class="member-logo">
-        <h3>${member.name}</h3>
-        <p><strong>Industry:</strong> ${member.industry}</p>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">Visit Website</a></p>
-        <p><strong>Membership Level:</strong> ${membershipText(member.membership)}</p>
-        <p>${member.description}</p>
+        <img 
+          src="images/${member.image}" 
+          alt="${member.name} logo"
+          class="member-logo"
+          loading="lazy"
+        >
+        
+        <div class="member-info">
+          <p><strong>🏷️ Industry:</strong> ${member.industry}</p>
+          <p><strong>ℹ️ About:</strong> ${member.description}</p>
+          <p><strong>📍 Address:</strong> ${member.address}</p>
+          <p><strong>📞 Phone:</strong> ${member.phone}</p>
+          <p><strong>Membership:</strong> ${membershipText(member.membership)}</p>
+          <a href="${member.website}" target="_blank" rel="noopener">
+             🌐 Visit Website
+          </a>
+        </div>
       `;
+
       membersContainer.appendChild(card);
     });
 
   } catch (error) {
     console.error('Error loading members:', error);
-    membersContainer.innerHTML = '<p>Failed to load member data.</p>';
+    membersContainer.innerHTML = '<p class="error">Unable to load directory data.</p>';
   }
 }
 
-// Convert membership number to text
+// ===========================
+// Membership Helper
+// ===========================
 function membershipText(level) {
-  switch(level) {
+  switch (level) {
     case 1: return 'Member';
-    case 2: return 'Silver';
-    case 3: return 'Gold';
+    case 2: return 'Silver Member';
+    case 3: return 'Gold Member';
     default: return 'Member';
   }
 }
 
-// Load members on page load
+// ===========================
+// Init
+// ===========================
 loadMembers();

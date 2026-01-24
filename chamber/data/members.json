@@ -5,9 +5,9 @@
     "phone": "+27 21 855 2005",
     "website": "https://longridge.co.za/our-food-and-restaurant/",
     "image": "rykaarts.webp",
-    "membership": 3,
+    "membership": 1,
     "industry": "Hospitality",
-    "description": "Fine dining and wine pairings in a beautiful vineyard setting."
+    "description": "Rykaart's Restaurant at Longridge Wine Estate offers a seasonal three-course dining experience, served family-style and crafted with fresh ingredients sourced from the estate’s biodynamic gardens."
   },
   {
     "name": "BlueWave Tech",
@@ -17,7 +17,7 @@
     "image": "bluewave.webp",
     "membership": 2,
     "industry": "Technology",
-    "description": "Innovative software solutions for businesses of all sizes."
+    "description": "BlueWave Tech provides professional technology solutions including software development, IT consulting, cloud services, and cybersecurity support for businesses across various industries."
   },
   {
     "name": "NextGen Solutions",
@@ -27,46 +27,46 @@
     "image": "nextgen.webp",
     "membership": 1,
     "industry": "Technology",
-    "description": "Next generation consulting and IT solutions."
+    "description": "NextGen Solutions delivers innovative technology consulting services focused on optimizing IT operations, improving system security, and supporting businesses through digital transformation."
   },
   {
-    "name": "Sunrise Cafe",
-    "address": "32 Henshawe Road, Southfield 7800",
-    "phone": "021 705 8752",
-    "website": "https://sunrisecafe.net",
-    "image": "sunrisecafe.webp",
+    "name": "Root44 Wine Emporium",
+    "address": "Corner of R44 and Annandale Road",
+    "phone": "+27 21 300 1126",
+    "website": "https://root44.co.za",
+    "image": "root44.webp",
     "membership": 1,
     "industry": "Hospitality",
-    "description": "Convenience store and cafe serving local favorites."
+    "description": "Root44 Wine Emporium features a restaurant, market, and an extensive selection of local and international wines, offering tastings and a relaxed gourmet experience for visitors."
   },
   {
-    "name": "GreenLeaf Market",
+    "name": "Bragg",
     "address": "Unit 9, Montague Industrial Park, 7 Bp Rd, Montague Gardens, Cape Town, 7441, South Africa",
-    "phone": "087 195 0225",
+    "phone": "+27 87 195 0225",
     "website": "https://www.greenleafhome.co.za",
-    "image": "greenleaf.webp",
+    "image": "bragg.webp",
     "membership": 2,
     "industry": "Retail",
-    "description": "Organic and sustainable grocery and home products."
+    "description": "Bragg Home and Decor specializes in stylish furniture and home décor, offering curated accessories and design solutions that help create modern, inviting living spaces."
   },
   {
     "name": "Cape Grace Hotel",
     "address": "West Quay Road, Victoria & Alfred, Cape Town 8001",
-    "phone": "021 410 7100",
+    "phone": "+27 21 410 7100",
     "website": "https://www.capegrace.com",
     "image": "capegrace.webp",
     "membership": 3,
     "industry": "Hospitality",
-    "description": "Luxury waterfront hotel with world-class amenities."
+    "description": "Cape Grace Hotel is a luxury hotel at Cape Town’s V&A Waterfront, offering elegant accommodation, fine dining, spa services, and personalized guest experiences."
   },
   {
-    "name": "Crafty Hands",
-    "address": "49 Gladiolus St, Lentegeur, Mitchells Plain, 7785",
-    "phone": "021 333 4444",
-    "website": "https://www.craftyhands.us/",
-    "image": "crafthands.webp",
-    "membership": 1,
-    "industry": "Retail",
-    "description": "Handmade crafts and artisan goods."
+    "name": "Tapi Tapi Ice Cream",
+    "address": "76 Lower Main Road, Observatory, 7695, Capetown ",
+    "phone": "+27 76 914 5614",
+    "website": "https://tapitapiicecream.co.za",
+    "image": "tapitapi.webp",
+    "membership": 2,
+    "industry": "Food & Beverage",
+    "description": "Tapi Tapi Ice Cream offers handcrafted ice creams and desserts, serving a variety of sweet treats in a fun, relaxed, and family-friendly environment."
   }
 ]
