@@ -52,24 +52,61 @@
   }
 
   .events,
-  .weather-card {
-    height: 100%;
-  }
+.weather {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 1.25rem; /* spacing between stacked cards inside weather */
+}
 
-  /* Stack weather cards inside their column */
-  .weather {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
+/* Each weather card fills its container proportionally */
+.weather-card {
+  flex: 1;
+  background-color: #ffffff; /* ensures current weather and forecast stretch evenly */
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Forecast days side-by-side */
-  #forecast {
+/* Forecast days row */
+#forecast {
+  display: flex;             /* make forecast days align horizontally */
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;               /* space between forecast-day items */
+}
+
+/* Each day in the forecast takes equal width */
+.forecast-day {
+  flex: 1 1 calc(33.333% - 0.5rem); /* 3 items per row with gap accounted for */
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+  .spotlights {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .forecast-day {
-    flex: 1 1 calc(33.333% - 0.5rem);
+  .spotlight-card {
+    background-color: #ffffff;
+    flex: 1 1 calc(33.333% - 1rem); 
+    max-width: calc(33.333% - 1rem);
   }
+}
+/* JOIN PAGE LARGE SCREEN */
+.join-layout {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.join-form {
+  flex: 2;
+}
+
+.membership-cards {
+  flex: 1;
 }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber | Cape Town Chamber of Commerce</title>
+
+  <meta name="description" content="Apply to join the Cape Town Chamber of Commerce. Choose a membership level and grow your business.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS (we’ll add later for timestamp & modals) -->
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="header-content">
+    <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+    <h1>Chamber of Commerce</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= MODALS ================= -->
+<dialog id="np-modal" class="membership-modal">
+  <h3>NP Membership</h3>
+  <p>No cost for registered non-profit organizations.</p>
+  <ul>
+    <li>Community networking</li>
+    <li>Event participation</li>
+    <li>Basic directory listing</li>
+  </ul>
+  <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="bronze-modal" class="membership-modal">
+  <h3>Bronze Membership</h3>
+  <p>Affordable membership for small businesses.</p>
+  <ul>
+    <li>Directory listing</li>
+    <li>Business training access</li>
+    <li>Networking events</li>
+  </ul>
+  <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="silver-modal" class="membership-modal">
+  <h3>Silver Membership</h3>
+  <p>Expanded exposure and growth opportunities.</p>
+  <ul>
+    <li>Spotlight eligibility</li>
+    <li>Event discounts</li>
+    <li>Advanced workshops</li>
+  </ul>
+  <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="gold-modal" class="membership-modal">
+  <h3>Gold Membership</h3>
+  <p>Premium visibility and exclusive benefits.</p>
+  <ul>
+    <li>Homepage spotlight</li>
+    <li>Priority advertising</li>
+    <li>VIP networking events</li>
+  </ul>
+  <button class="close-modal">Close</button>
+</dialog>
+
+
+<!-- ================= MAIN ================= -->
+<main>
+  <h2>Join the Chamber</h2>
+
+  <div class="join-layout">
+    <!-- ================= FORM ================= -->
+    <form method="get" action="thankyou.html" class="join-form">
+
+      <label>
+        First Name
+        <input type="text" name="firstName" title="First Name" required autocomplete="given-name">
+      </label>
+
+      <label>
+        Last Name
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name">
+      </label>
+
+      <label>
+        Organizational Title
+        <input
+          type="text"
+          name="orgTitle"
+          title="Organizational Title"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\- ]{7,}">
+      </label>
+
+      <label>
+        Email Address
+        <input
+          type="email"
+          name="email"
+          title="Email Address"
+          required
+          autocomplete="email"
+          placeholder="example@email.com">
+      </label>
+
+      <label>
+        Mobile Phone
+        <input
+          type="tel"
+          name="phone"
+          title="Mobile Phone Number"
+          required
+          autocomplete="tel">
+      </label>
+
+      <label>
+        Business / Organization Name
+        <input
+          type="text"
+          name="business"
+          title="Business Name"
+          required
+          autocomplete="organization">
+      </label>
+
+      <label>
+        Membership Level
+        <select name="membership" title="Membership Level" required>
+          <option value="">Select a level</option>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      <!-- Hidden timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Apply for Membership">
+    </form>
+
+    <!-- ================= MEMBERSHIP CARDS ================= -->
+    <section class="membership-cards">
+      <div class="membership-card">
+        <h3>NP Membership</h3>
+        <p>No fee for non-profit organizations.</p>
+        <a href="#" data-modal="np-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Bronze Membership</h3>
+        <p>Affordable entry-level benefits.</p>
+        <a href="#" data-modal="bronze-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Silver Membership</h3>
+        <p>More exposure and training.</p>
+        <a href="#" data-modal="silver-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Gold Membership</h3>
+        <p>Maximum visibility and perks.</p>
+        <a href="#" data-modal="gold-modal">Learn More</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+ <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <!-- Chamber Name & Address -->
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>123 Main Street, Cape Town, South Africa</p>
+
+      <!-- Contact Info -->
+      <p>Email: info@chamber.org | Phone: +27 61 155 2911</p>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn Logo" width="24" height="24">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+        </a>
+      </div>
+
+      <!-- Developer Info -->
+       <p>© <span id="currentYear"></span> Jacqueline Mufetu | WDD 231</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </div>
+</footer>
+
+</body>
+</html>
