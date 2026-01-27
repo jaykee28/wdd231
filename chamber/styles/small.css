@@ -169,7 +169,7 @@ main h2 {
 
 /* Header for Upcoming Events */
 .events h3 {
-  background-color: #004aad; /* dark blue */
+  background-color: #004aad; 
   color: white;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
@@ -185,7 +185,7 @@ main h2 {
 ================================ */
 
 .weather-card h3 {
-  background-color: #004aad; /* dark blue */
+  background-color: #004aad; 
   color: white;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
@@ -246,12 +246,18 @@ main h2 {
 ================================ */
 .spotlights {
   display: flex;
-  flex-direction: column; /* stacked vertically on mobile */
+  flex-direction: column; 
   gap: 1rem;
   padding: 0.5rem 0;
   text-align: center;
 }
 
+.spotlights .section-title {
+  width: 100%;          
+  display: block;       
+  text-align: center;   
+  margin-bottom: 1.5rem; 
+}
 
 
 .spotlight-card {
@@ -268,6 +274,8 @@ main h2 {
   margin: 0 auto 0.75rem;
   display: block;
 }
+
+
 
 .spotlight-card h4 {
   color: #004aad;

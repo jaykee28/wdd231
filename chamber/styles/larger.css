@@ -57,26 +57,25 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  gap: 1.25rem; /* spacing between stacked cards inside weather */
+  gap: 1.25rem; 
 }
 
 /* Each weather card fills its container proportionally */
 .weather-card {
   flex: 1;
-  background-color: #ffffff; /* ensures current weather and forecast stretch evenly */
+  background-color: #ffffff; 
   display: flex;
   flex-direction: column;
 }
 
 /* Forecast days row */
 #forecast {
-  display: flex;             /* make forecast days align horizontally */
+  display: flex;             
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.5rem;               /* space between forecast-day items */
+  gap: 0.5rem;              
 }
 
-/* Each day in the forecast takes equal width */
 .forecast-day {
   flex: 1 1 calc(33.333% - 0.5rem); /* 3 items per row with gap accounted for */
   background-color: #ffffff;
