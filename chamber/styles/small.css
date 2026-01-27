@@ -58,7 +58,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #003080;
+  background-color: #fff;
   margin-top: 0.75rem;
   border-radius: 6px;
   overflow: hidden;
@@ -72,12 +72,12 @@ nav a {
   display: block;
   padding: 0.6rem;
   text-align: center;
-  color: #fff;
+  color: #002060;
   font-weight: 600;
 }
 
 nav a.active {
-  background-color: #002060;
+  background-color: #ffcc00;
   text-decoration: underline;
 }
 
@@ -150,7 +150,7 @@ main h2 {
 }
 
 .cta-button:hover {
-  background-color: #e6b800;
+  background-color: #ffcc00;
 }A
 
 /* ===============================
