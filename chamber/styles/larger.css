@@ -95,7 +95,6 @@
     background-color: #ffffff;
     flex: 1 1 calc(33.333% - 1rem); 
     max-width: calc(33.333% - 1rem);
-  }
 }
 /* JOIN PAGE LARGE SCREEN */
 .join-layout {
@@ -109,4 +108,5 @@
 
 .membership-cards {
   flex: 1;
+}
 }
