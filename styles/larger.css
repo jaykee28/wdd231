@@ -1,5 +1,7 @@
+/* ================== LARGE CSS ================== */
 @media (min-width: 64rem) {
 
+  /* NAVIGATION */
   #primaryNav {
     display: block !important;
     background-color: transparent;
@@ -30,6 +32,7 @@
     display: none;
   }
 
+  /* HEADER */
   .header-content {
     padding: 1.5rem 2rem;
   }
@@ -47,6 +50,7 @@
     color: #ffffff;
   }
 
+  /* ABOUT SECTION */
   .about-student-container {
     flex-direction: row;
     text-align: left;
@@ -67,6 +71,7 @@
     max-width: 350px;
   }
 
+  /* COURSE CARDS */
   #courseCards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -84,6 +89,7 @@
     font-size: 1rem;
   }
 
+  /* FOOTER */
   footer {
     font-size: 1rem;
     padding: 2rem 2rem;
@@ -91,5 +97,29 @@
 
   .social-links {
     gap: 2rem;
+  }
+}
+
+/* ================== DISCOVER GRID LARGE SCREENS ================== */
+@media (min-width: 1025px) {
+  .discover-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    /* Creative named areas layout */
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card2 card6"
+      "card7 card8 card8 card6";
+  }
+
+  /* Hover effect for desktop images */
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s;
   }
 }

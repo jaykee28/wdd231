@@ -301,3 +301,41 @@ footer {
   font-style: italic;
   font-size: 0.85rem;
 }
+
+
+/* ---------- DISCOVER GRID SMALL ---------- */
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.discover-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#visit-message {
+  background: #e7f0ff;
+  padding: 1rem;
+  margin: 1rem;
+  border-left: 6px solid #1b4fa3;
+  font-weight: 600;
+}
