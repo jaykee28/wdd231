@@ -4,36 +4,6 @@ console.log("Discover.js loaded");
 
 import { places } from "../data/discover.mjs";
 
-// --- Last visit message ---
-const visitMessage = document.getElementById("visit-message");
-const now = Date.now();
-const lastVisit = localStorage.getItem("lastVisit");
-
-let message = "";
-
-if (!lastVisit) {
-  message = "Welcome! Let us know if you have any questions.";
-} else {
-  const lastVisitTime = parseInt(lastVisit, 10);
-  const diffMs = now - lastVisitTime;
-  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-
-  if (diffDays < 1) {
-    message = "Back so soon! Awesome!";
-  } else if (diffDays === 1) {
-    message = "You last visited 1 day ago.";
-  } else {
-    message = `You last visited ${diffDays} days ago.`;
-  }
-}
-
-if (visitMessage) {
-  visitMessage.textContent = message;
-}
-
-localStorage.setItem("lastVisit", now.toString());
-
-
 console.log("Imported places:", places);
 
 const grid = document.querySelector(".discover-grid");

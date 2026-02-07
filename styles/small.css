@@ -333,9 +333,15 @@ footer {
 }
 
 #visit-message {
-  background: #e7f0ff;
-  padding: 1rem;
-  margin: 1rem;
-  border-left: 6px solid #1b4fa3;
-  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  background-color: #ef476f; /* pink/red */
+  color: white;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  transform: rotate(-15deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+
