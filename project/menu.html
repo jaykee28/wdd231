@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Seasonal Menu | Rykaart’s Restaurant">
@@ -22,8 +22,8 @@
 
 
 
-  <script src="scripts/main.js" type="module" defer></script>
-  <script src="scripts/menu.js" type="module" defer></script>
+  <script src="scripts/main.js" type="module" ></script>
+  <script src="scripts/menu.js" type="module" ></script>
 </head>
 
 <body>
@@ -31,7 +31,8 @@
 <header>
   <div class="logo">Rykaart’s Restaurant</div>
 
-  <button id="menuBtn">☰</button>
+  <button id="menuBtn" aria-label="Open navigation menu">☰</button>
+
 
   <nav id="navMenu">
     <a href="index.html">Home</a>
@@ -62,22 +63,22 @@
 </main>
 
 
- <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
   <footer>
     <div class="footer-content">
-      <!-- Chamber Name & Address -->
       <p><strong>Rykaart’s Restaurant at Longridge Wine Estate</strong></p>
       <p>Off the R44, Helderberg Road Stellenbosch 7613, Cape Town, South Africa</p>
 
-      <!-- Contact Info -->
-      <p>Email: rykaarts@longridge.co.za| Phone: +27 21 855 2005</p>
+      <p>
+        Email: <a href="mailto:rykaarts@longridge.co.za">rykaarts@longridge.co.za</a> | 
+        Phone: <a href="tel:+27218552005">+27 21 855 2005</a>
+      </p>
 
-      <!-- Social Media Links -->
       <div class="social-media">
         <a href="https://www.facebook.com/rykaartsstellenbosch" target="_blank" aria-label="Facebook">
           <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
         </a>
-        <a href="https://linktr.ee/rykaartsstellenbosch" target="_blank" aria-label="LinkedIn">
+        <a href="https://linktr.ee/rykaartsstellenbosch" target="_blank" aria-label="Linktree">
           <img src="images/link.svg" alt="Linktree Logo" width="24" height="24">
         </a>
         <a href="https://www.instagram.com/rykaartsstellenbosch" target="_blank" aria-label="Instagram">
@@ -85,14 +86,10 @@
         </a>
       </div>
 
-      <!-- Developer Info -->
-       <p>© <span id="currentYear"></span> Jacqueline Mufetu | Project</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
-  </div>
-  
+      <p>© <span id="currentYear"></span> Jacqueline Mufetu | Project</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+    
     <a href="attributions.html">Attributions</a>
   </footer>
-</body>
-</html>
-
 
