@@ -1,0 +1,128 @@
+{
+  "month": "December 2025",
+  "menu": {
+    "snacks": [
+      {
+        "name": "Grana Padano Choux Puffs",
+        "description": "Light and airy choux puffs filled with Grana Padano cheese.",
+        "image": "images/cheese_puffs.webp"
+      },
+      {
+        "name": "Rykaart’s Bread with Lemon and Parsley Butter",
+        "description": "Freshly baked bread served with zesty lemon and parsley butter.",
+        "image": "images/bread.webp"
+      },
+      {
+        "name": "Longridge Methode Cap Classique Brut NV",
+        "description": "A glass of Longridge Brut NV to accompany snacks.",
+        "image": "images/brut.webp"
+      }
+    ],
+
+    "starters": {
+      "food": [
+        {
+          "name": "Potato Gnocchi",
+          "description": "Served with Lemon cream, garden kale, pea and mint salsa.",
+          "image": "images/potato.webp"
+        },
+        {
+          "name": "Garden Leaf Salad",
+          "description": "With Dessert peaches, walnuts, orange poppy seed dressing.",
+          "image": "images/salad.webp"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Longridge The Emily Rosé",
+          "description": "A glass of Longridge The Emily Rosé to accompany starters.",
+          "image": "images/emily.webp"
+        }
+      ]
+    },
+
+    "mains": {
+      "food": [
+        {
+          "name": "Braised Karoo Lamb Neck",
+          "description": "Served with Longridge Chenin Blanc Sauce and Gremolata.",
+          "image": "images/lamb.webp"
+        },
+        {
+          "name": "Grass Fed Beef Fillet",
+          "description": "Served with Longridge Cabernet Sauvignon Sauce with Red Chimichurri.",
+          "image": "images/beef.webp"
+        },
+        {
+          "name": "Crispy Potatoes",
+          "description": "With Confit garlic and Aioli.",
+          "image": "images/crispy_potatoes.webp"
+        },
+        {
+          "name": "Grilled Baby Cabbage",
+          "description": "With Salted yogurt and Sesame Chilli Oil.",
+          "image": "images/cabbage.webp"
+        },
+        {
+          "name": "Roasted Garden Butternut",
+          "description": "With Harrys Honey Dressing, Orange Pumpkin Seeds and Parmesan.",
+          "image": "images/butternut.webp"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Longridge Cabernet Sauvignon 2020",
+          "description": "A glass of Longridge Cabernet Sauvignon served with mains.",
+          "image": "images/cab_sav.webp"
+        }
+      ]
+    },
+
+    "desserts": {
+      "food": [
+        {
+          "name": "Semolina and Lemon Syrup Cake",
+          "description": "Served with whipped cream and sesame seed brittle.",
+          "image": "images/cake.webp"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Longridge Edelgoud Noble Late Harvest 2017",
+          "description": "Dessert wine pair to pair with the Dessert.",
+          "image": "images/edelgoud.webp"
+        }
+      ]
+    },
+
+    "kids menu": [
+      {
+        "name": "Rykaart’s Bread with Lemon and Parsley Butter",
+        "description": "Freshly baked bread served with zesty lemon and parsley butter.",
+        "image": "images/bread.webp"
+      },
+      {
+        "name": "Grana Padano Cheese Puffs",
+        "description": "Light and airy choux puffs filled with Grana Padano cheese.",
+        "image": "images/cheese_puffs.webp"
+      },
+      {
+        "name": "Crumbed Free Range Chicken Strips",
+        "description": "Served with triple cooked potato chips and cucumber sticks.",
+        "image": "images/kids_meal.webp"
+      },
+      {
+        "name": "Strawberry and Chocolate Ice Cream Popsicle",
+        "description": "With sprinkles.",
+        "image": "images/popscile.webp"
+      }
+    ],
+
+    "pricing": {
+      "menu": "R625 Per Person",
+      "wine_pairing": "R395 Per Person",
+      "kids_menu": "R200 Per Child",
+      "note": "Menu subject to change. Most dietary requirements can be accommodated with advance notice. Please inform us of any allergies or special requests when booking."
+    }
+  }
+}

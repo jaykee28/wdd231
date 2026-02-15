@@ -1,0 +1,524 @@
+:root {
+  --brown: #5a3e2b;
+  --cream: #f7f3ef;
+  --gold: #8b6f47;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  margin: 0;
+}
+
+header {
+  background: var(--brown);
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+nav {
+  display: none;
+}
+
+nav.open {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background: var(--brown);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Core styles for all screen sizes */
+
+/* Menu Sections */
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Menu Cards */
+.menu-card {
+  width: 220px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img.modal-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+#modal-close:hover {
+  color: #333;
+}
+
+/* Pricing */
+#menu-pricing {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ===========================
+   Reservation Form
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button {
+  padding: 0.8rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* ===========================
+   Confirmation & Summary
+=========================== */
+#confirmation,
+#reservation-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #eef5f9;
+}
+
+#reservation-summary h2 {
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   Thank You Page Buttons
+=========================== */
+.thanks-container .btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  background-color: #5a3e2b;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.thanks-container .btn:hover {
+  background-color: #444;
+}
+
+
+/* Dietary checkboxes */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Hide nav links on small screens */
+#navMenu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #5a3e2b;
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Nav links style */
+#navMenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Focus outline for accessibility */
+#navMenu a:focus,
+#menuBtn:focus {
+  outline: 3px solid #ffd700; /* gold for visibility */
+  outline-offset: 2px;
+}
+
+/* Hamburger button */
+#menuBtn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f7f3ef;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+}
+
+/* Show nav when active */
+#navMenu.active {
+  display: flex;
+}
+
+/* Medium & large screens: show horizontal nav */
+@media (min-width: 600px) {
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  #menuBtn {
+    display: none; /* hide hamburger on larger screens */
+  }
+}
+
+/* Base Styles - Mobile First */
+
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #5a3e2b;
+  color: #fff;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  display: none; /* hidden by default for mobile, toggled with JS */
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* ===== HOME PAGE CARDS ===== */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  align-items: center; /* center cards */
+}
+
+/* Card */
+.card {
+  background: #f7f3ef;
+  border-radius: 14px;
+  overflow: hidden; /* ensure images/text stay inside */
+  text-align: center;
+  width: 100%;       /* full width on mobile */
+  max-width: 700px;  /* max width on larger screens */
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+/* Image on top */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 12px 0 0; /* rounded top corners only */
+  object-fit: cover; /* maintain aspect ratio */
+}
+
+/* Text section */
+.card-content {
+  padding: 1rem 1.5rem 0 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Heading */
+.card-content h1,
+.card-content h2,
+.card-content h3 {
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  color: #6b5844;
+  margin-top: 1.5rem;
+}
+
+/* Divider line */
+.card-content h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #bbb;
+  margin: 1rem auto 1.5rem auto;
+}
+
+/* Paragraph text */
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5a3e2b;
+  word-wrap: break-word; /* prevents overflow */
+}
+
+/* ================= Mobile Adjustments ================= */
+@media (max-width: 600px) {
+  .card-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .card {
+    padding-bottom: 1.5rem;
+    max-width: 95%; /* almost full width on small screens */
+  }
+
+  .card-content h1,
+  .card-content h2,
+  .card-content h3 {
+    font-size: 1.4rem; /* smaller headings on mobile */
+  }
+
+  .card-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* Button */
+.card-content .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid #8b6f47;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #8b6f47;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.card-content .btn:hover {
+  background: #8b6f47;
+  color: white;
+}
+
+
+footer {
+  background-color: #5a3e2b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ================= Attributions Page ================= */
+.attributions-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f8f8; /* subtle light background */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.attributions-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.attributions-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.attributions-section ul li a {
+  color: #1a73e8; /* link color consistent with theme */
+  text-decoration: underline;
+}
+
+.attributions-section ul li a:hover {
+  color: #0b4da0;
+}
+
+.thanks-container, 
+.attributions-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+

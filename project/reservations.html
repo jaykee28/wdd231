@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | Rykaart’s Restaurant</title>
+  <meta name="description" content="Book your table at Rykaart’s Restaurant in the Cape Winelands.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Book a Table | Rykaart’s Restaurant">
+<meta property="og:description" content="Reserve your table at Rykaart’s Restaurant at Longridge Wine Estate. Enjoy family-style seasonal dining in the Cape Winelands.">
+<meta property="og:image" content="https://jaykee28.github.io/project/images/og-reservations.webp">
+<meta property="og:url" content="https://jaykee28.github.io/project/reservations.html">
+<meta property="og:type" content="website">
+
+
+  <script src="scripts/main.js" type="module" defer></script>
+  <script src="scripts/reservations.js" type="module" defer></script>
+
+</head>
+<body>
+
+<header>
+  <div class="logo">Rykaart’s Restaurant</div>
+  <button id="menuBtn" aria-label="Open Menu">☰</button>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservations.html">Reservations</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Book Your Table</h1>
+  <p>Please fill in the form below to reserve your table. We’ll confirm your booking shortly.</p>
+
+  <form id="reservation-form">
+    <!-- Name -->
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required placeholder="Your full name">
+
+    <!-- Email -->
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+    <!-- Phone -->
+    <label for="phone">Phone *</label>
+    <input type="tel" id="phone" name="phone" required placeholder="+27 123 456 7890">
+
+    <!-- Date -->
+    <label for="date">Reservation Date *</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Time -->
+    <label for="time">Reservation Time *</label>
+    <input type="time" id="time" name="time" required>
+
+    <!-- Number of Guests -->
+    <label for="guests">Number of Guests *</label>
+    <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+    <!-- Special Requests -->
+    <label for="requests">Special Requests</label>
+    <textarea id="requests" name="requests" placeholder="Dietary requirements, seating preferences, etc."></textarea>
+
+    <button type="submit">Reserve Table</button>
+  </form>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-content">
+    <p><strong>Rykaart’s Restaurant at Longridge Wine Estate</strong></p>
+    <p>Off the R44, Helderberg Road Stellenbosch 7613, Cape Town, South Africa</p>
+
+    <p>
+      Email: <a href="mailto:rykaarts@longridge.co.za">rykaarts@longridge.co.za</a> |
+      Phone: <a href="tel:+27218552005">+27 21 855 2005</a>
+    </p>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/rykaartsstellenbosch" target="_blank" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+      </a>
+      <a href="https://linktr.ee/rykaartsstellenbosch" target="_blank" aria-label="Linktree">
+        <img src="images/link.svg" alt="Linktree Logo" width="24" height="24">
+      </a>
+      <a href="https://www.instagram.com/rykaartsstellenbosch" target="_blank" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+      </a>
+    </div>
+
+    <p>© <span id="currentYear"></span> Jacqueline Mufetu | Project</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </div>
+
+  <a href="attributions.html">Attributions</a>
+</footer>
+
+</body>
+</html>

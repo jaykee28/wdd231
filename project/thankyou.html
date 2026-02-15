@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Rykaart’s Restaurant</title>
+  <meta name="description" content="Thank you for your reservation at Rykaart’s Restaurant.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Thank You | Rykaart’s Restaurant">
+<meta property="og:description" content="Thank you for reserving your table at Rykaart’s Restaurant. We look forward to welcoming you at Longridge Wine Estate.">
+<meta property="og:image" content="https://jaykee28.github.io/project/images/og-thankyou.webp">
+<meta property="og:url" content="https://jaykee28.github.io/project/thankyou.html">
+<meta property="og:type" content="website">
+
+
+  <script src="scripts/main.js" type="module" defer></script>
+  <script src="scripts/thankyou.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Rykaart’s Restaurant</div>
+
+    <button id="menuBtn" aria-label="Open Menu">☰</button>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="thanks-container">
+      <h1>Thank You!</h1>
+      <p>Your reservation has been successfully submitted.</p>
+      <p>We look forward to welcoming you at Rykaart’s Restaurant.</p>
+
+      <!-- Reservation Summary -->
+      <div id="reservation-summary"></div>
+
+      <a href="index.html" class="btn">Return to Home</a>
+      <a href="menu.html" class="btn">View This Month’s Menu</a>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <p><strong>Rykaart’s Restaurant at Longridge Wine Estate</strong></p>
+      <p>Off the R44, Helderberg Road Stellenbosch 7613, Cape Town, South Africa</p>
+
+      <p>
+        Email: <a href="mailto:rykaarts@longridge.co.za">rykaarts@longridge.co.za</a> | 
+        Phone: <a href="tel:+27218552005">+27 21 855 2005</a>
+      </p>
+
+      <div class="social-media">
+        <a href="https://www.facebook.com/rykaartsstellenbosch" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+        </a>
+        <a href="https://linktr.ee/rykaartsstellenbosch" target="_blank" aria-label="Linktree">
+          <img src="images/link.svg" alt="Linktree Logo" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/rykaartsstellenbosch" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+        </a>
+      </div>
+
+      <p>© <span id="currentYear"></span> Jacqueline Mufetu | Project</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+    
+    <a href="attributions.html">Attributions</a>
+  </footer>

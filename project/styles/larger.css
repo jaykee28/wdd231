@@ -1,0 +1,110 @@
+@media (min-width: 900px) {
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+.menu-card {
+  width: 220px; /* desktop card width */
+}
+
+.menu-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 900px) {
+  form#reservation-form {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 3rem auto;
+  }
+
+  /* Full width elements */
+  textarea,
+  fieldset,
+  button {
+    grid-column: 1 / -1;
+  }
+
+  form#reservation-form button {
+    justify-self: start;
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Large screens - flex layout for cards */
+.card-container {
+  display: flex;
+  flex-direction: column; /* default stacked for mobile/medium */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* For each card, arrange content side by side */
+.card {
+  display: flex;
+  flex-direction: row; /* image + text side by side */
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Reverse cards: image left, text right */
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Card text/content on the left */
+.card-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Image on the right */
+.card img {
+  flex: 1;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-left: 1px solid #eee; /* optional visual separation */
+  border-radius: 0;
+}
+
+/* Headings inside cards */
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.card-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.card-content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #7b3f00; /* example color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card-content .btn:hover {
+  background-color: #a55b20;
+}

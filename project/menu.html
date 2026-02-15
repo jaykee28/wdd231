@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu | Rykaart’s Restaurant</title>
+  <meta name="description" content="Rykaart’s Restaurant at Longridge Wine Estate offers seasonal dining and vineyard views.">
+  <meta name="author" content="Jacqueline Mufetu">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Seasonal Menu | Rykaart’s Restaurant">
+<meta property="og:description" content="Explore our carefully crafted seasonal menu, featuring fresh produce from our biodynamic farm at Longridge Wine Estate.">
+<meta property="og:image" content="https://jaykee28.github.io/project/images/og-menu.webp">
+<meta property="og:url" content="https://jaykee28.github.io/project/menu.html">
+<meta property="og:type" content="website">
+
+
+
+  <script src="scripts/main.js" type="module" defer></script>
+  <script src="scripts/menu.js" type="module" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Rykaart’s Restaurant</div>
+
+  <button id="menuBtn">☰</button>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservations.html">Reservations</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Menu Title -->
+  <h1 id="menu-title">Seasonal Menu</h1>
+  <p id="menu-subtitle">Fresh, biodynamic flavours crafted for the table and the season.</p>
+
+
+
+  <!-- Pricing & Notes -->
+  <div id="menu-pricing"></div>
+
+  <!-- Menu Items Container (JS will populate this) -->
+  <div id="menu-container"></div>
+
+  <!-- Modal -->
+  <div id="menu-modal" class="modal">
+    <div class="modal-content" id="modal-content">
+      <span id="modal-close">&times;</span>
+    </div>
+  </div>
+</main>
+
+
+ <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <!-- Chamber Name & Address -->
+      <p><strong>Rykaart’s Restaurant at Longridge Wine Estate</strong></p>
+      <p>Off the R44, Helderberg Road Stellenbosch 7613, Cape Town, South Africa</p>
+
+      <!-- Contact Info -->
+      <p>Email: rykaarts@longridge.co.za| Phone: +27 21 855 2005</p>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://www.facebook.com/rykaartsstellenbosch" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook Logo" width="24" height="24">
+        </a>
+        <a href="https://linktr.ee/rykaartsstellenbosch" target="_blank" aria-label="LinkedIn">
+          <img src="images/link.svg" alt="Linktree Logo" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/rykaartsstellenbosch" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram Logo" width="24" height="24">
+        </a>
+      </div>
+
+      <!-- Developer Info -->
+       <p>© <span id="currentYear"></span> Jacqueline Mufetu | Project</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </div>
+  
+    <a href="attributions.html">Attributions</a>
+  </footer>
+</body>
+</html>
+
+
